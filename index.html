@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Modern software engineer portfolio focused on scalable backend systems and thoughtful user experiences."
+    />
+    <title> Suraj Mundlik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home">Suraj Mundlik</a>
+        <nav class="nav-links">
+          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="section hero">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            
+            <h2>Hello, I'm Suraj Mundlik</h2>
+            <p class="eyebrow">Software Engineer</p>
+            <p class="hero-copy">
+                Don’t measure your work only in lines of code. 
+                Measure it in problems solved, lives improved, and systems made better.
+            </p>
+            <a href="#projects" class="btn-primary">View Work</a>
+          </div>
+          <div class="hero-image reveal">
+            <div class="avatar-ring">
+              <img
+                src="profile.png"
+                alt="Profile portrait"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">About</p>
+            <h2>Engineering with performance and purpose</h2>
+          </div>
+          <div class="grid-alt">
+            <article class="block reveal">
+              <h3>About me</h3>
+              <p>
+                I am currently pursuing my Bachelor of Engineering in Computer
+                Engineering at Dr. D.Y. Patil Technical Campus, Varale, with an
+                expected graduation in 2027.
+              </p>
+              <p>
+                My focus lies in building scalable backend systems while
+                crafting user experiences that feel effortless. I believe great
+                software is where technical performance meets thoughtful design.
+              </p>
+              <div class="stat-row">
+                <div class="stat">
+                  <strong>2027</strong>
+                  <span>Expected Graduation</span>
+                </div>
+                <!-- <div class="stat">
+                  <strong>Backend</strong>
+                  <span>Core Focus</span>
+                </div> -->
+              </div>
+            </article>
+
+            <article class="block reveal">
+              <!-- <h3>Backend Systems</h3>
+              <p>Scalable architecture and clean logic design.</p> -->
+              <h3>Skills</h3>
+              <ul class="skills-list">
+                <li>Java</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>HTML &amp; CSS</li>
+                <li>JavaScript</li>
+                <li>Rest API</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Projects</p>
+            <h2>Selected work</h2>
+          </div>
+
+          <div class="projects-list">
+            <article class="project-card reveal" style="--delay: 0ms">
+              <div class="project-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80"
+                  alt="Smart home IoT dashboard"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Smart Home Monitoring</h3>
+                <p>IoT monitoring with live sensor alert workflow.</p>
+                <p class="tech-stack">Java, Sensors</p>
+              </div>
+            </article>
+
+            <article class="project-card reveal" style="--delay: 80ms">
+              <div class="project-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80"
+                  alt="SQL student management system"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Student Record System</h3>
+                <p>Database system for student records and result reports.</p>
+                <p class="tech-stack">Java, SQL</p>
+              </div>
+            </article>
+
+            <article class="project-card reveal" style="--delay: 140ms">
+              <div class="project-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80"
+                  alt="Weather tracking system preview"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Weather Tracking System</h3>
+                <p>Responsive weather interface with live location updates.</p>
+                <p class="tech-stack">JavaScript, API, CSS</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container grid-alt">
+          <div class="block reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Have a project? Let's talk.</h2>
+            <p>
+              Open to internships, collaboration, and opportunities where
+              engineering quality and creative execution are both valued.
+            </p>
+          </div>
+
+          <div class="block reveal">
+            <form class="contact-form">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required />
+
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+
+              <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Suraj Mundlik - Software Engineer</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
